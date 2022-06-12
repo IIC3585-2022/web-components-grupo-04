@@ -1,4 +1,26 @@
 {
+  "name": "web-components-grupo-04",
+  "description": "",
+  "version": "1.0.0",
+  "main": "my-element.js",
+  "devDependencies": {
+    "@web/dev-server": "^0.1.31"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "web-dev-server --node-resolve --app-index src/indexTodoList.html  --open --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IIC3585-2022/web-components-grupo-04.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IIC3585-2022/web-components-grupo-04/issues"
+  },
+  "homepage": "https://github.com/IIC3585-2022/web-components-grupo-04#readme",
   "dependencies": {
     "lit": "^2.2.5"
   }
