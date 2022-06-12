@@ -1,7 +1,54 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
 <head>
-  <script type="module" src="./my-element.js"></script>
+  <title>Web components G4</title>
 </head>
+
 <body>
-  <my-element></my-element>
+  <h1>Web components</h1>
+
+  <h3>Productos</h3>
+
+  <div class="products">
+    <sell-item 
+      title="Perfume"
+      image="https://cdn1-prd.tiendabelcorp.com/FotoProductoFondoBlancoWebRedes/200101430-FotoProducto.jpg"
+      old-price="$175.990"
+      stars="4"
+    >
+      <span slot="price">$79.990</span>
+      <span slot="discount">55%</span>
+    </sell-item>
+
+    <sell-item 
+      title="Papas duquesas"
+      image="https://jumbo.vtexassets.com/arquivos/ids/428101/Papas-Duquesas-Frutos-del-Maipo-Bolsa-1-kg-Congelado.jpg?v=637533150978530000"
+      old-price="$10.000"
+      stars="5"
+    >
+      <span slot="price">$6.000</span>
+      <span slot="discount">40%</span>
+    </sell-item>
+
+    <sell-item 
+      title="Zapatillas"
+      image="https://assets.adidas.com/images/w_320,f_auto,q_auto,fl_lossy,c_fill,g_auto/c9fdf27c73cc481aa8efacb6002c81bc_9366/Zapatillas_Forum_Mid_Blanco_FY7939_01_standard.jpg"
+      old-price="$104.990"
+      stars="2"
+    >
+      <span slot="price">$78.750</span>
+      <span slot="discount">25%</span>
+    </sell-item>
+  </div>
+  
+
+  <script src="components/sellItemComponent.js"></script>
 </body>
+
+<style>
+  .products {
+    display: flex;
+    justify-content: space-around;
+  }
+</style>
+</html>
