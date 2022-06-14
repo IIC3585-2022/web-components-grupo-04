@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script type="module" src="./components/litTodoList/my-element.js"></script>
+    <script type="module" src="./components/litTodoList/todo-list.js"></script>
     <style>
       body {
         font-family: 'Open Sans', sans-serif;
-        font-size: 1.5em;
+        font-size: 1em;
         padding-left: 0.5em;
+      }
+      page-container {
+        display: flex;
+        justify-content: center;
+      }
+      h1 {
+        text-align: center;
+        font-size: 2em;
+      }
+      todo-list{
+        width: 50%;
       }
     </style>
   </head>
   <body>
-    <h1>Im evil</h1>
-    <my-element></my-element>
+    <div class="page-container">
+
+      <h1>Todo</h1>
+      <todo-list></todo-list>
+    </div>
   </body>
 </html>
