@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script type="module" src="./components/litTodoList/my-element.js"></script>
     <style>
       body {
         font-family: 'Open Sans', sans-serif;
@@ -9,9 +8,15 @@
         padding-left: 0.5em;
       }
     </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   </head>
   <body>
-    <h1>Im evil</h1>
-    <my-element></my-element>
+    <todo-list prompt="Add new list item" 
+              titulo="Todo" 
+              item1="Prepara mi almuerzo"
+              item2="Estudiar para la prueba de Cálculo"
+              item3="Tarea de Aplicaciones Web"></todo-list>
+    <script src="components/todoListComponent.js"></script>
+    <script src="components/todoItemComponent.js"></script>
   </body>
 </html>
