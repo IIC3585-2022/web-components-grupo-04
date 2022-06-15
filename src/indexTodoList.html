@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script type="module" src="./components/litTodoList/lit-todo-list.js"></script>
     <style>
       body {
         font-family: 'Open Sans', sans-serif;
-        font-size: 1.5em;
+        font-size: 1em;
         padding-left: 0.5em;
+      }
+      page-container {
+        display: flex;
+        justify-content: center;
+      }
+      h1 {
+        font-size: 2em;
+      }
+      todo-list{
+        width: 50%;
       }
     </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   </head>
   <body>
-    <todo-list prompt="Add new list item" 
-              titulo="Todo" 
-              item1="Prepara mi almuerzo"
-              item2="Estudiar para la prueba de Cálculo"
-              item3="Tarea de Aplicaciones Web"></todo-list>
+    <div class="page-container">
+
+      <h1>Todo</h1>
+      <lit-todo-list></lit-todo-list>
+    
+      <todo-list prompt="Add new list item" 
+                titulo="Todo" 
+                item1="Prepara mi almuerzo"
+                item2="Estudiar para la prueba de Cálculo"
+                item3="Tarea de Aplicaciones Web"></todo-list>
+    </div>
     <script src="components/todoListComponent.js"></script>
     <script src="components/todoItemComponent.js"></script>
   </body>
