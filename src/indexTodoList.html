@@ -20,12 +20,21 @@
         width: 50%;
       }
     </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   </head>
   <body>
     <div class="page-container">
 
       <h1>Todo</h1>
       <todo-list></todo-list>
+    
+      <todo-list prompt="Add new list item" 
+                titulo="Todo" 
+                item1="Prepara mi almuerzo"
+                item2="Estudiar para la prueba de Cálculo"
+                item3="Tarea de Aplicaciones Web"></todo-list>
     </div>
+    <script src="components/todoListComponent.js"></script>
+    <script src="components/todoItemComponent.js"></script>
   </body>
 </html>
