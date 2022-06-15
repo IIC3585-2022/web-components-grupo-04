@@ -1,27 +1,27 @@
 import {LitElement, html, css} from 'lit';
 
-export class ToDoList extends LitElement {
+export class LitToDoList extends LitElement {
   static properties = {
     _listItems: {state: true},
   };
   static styles = css`
-    .todos-lists-container {
-      display: flex;
-    }
     .todos-container {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
+      margin-top: 30px;
 
     }
     .todo-card {
       width: 50%;
+      max-width: 500px;
       display:flex;
       justify-content: space-between;
       font-family: 'Arial', sans-serif;
+      fony-weight: bold;
       background: #f4f4f4;
-      max-width: 500px;
       margin-bottom: 30px;
+      margin-left: 40px;
       padding: 1rem;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       border-radius: 5px;
@@ -40,7 +40,7 @@ export class ToDoList extends LitElement {
     .add-todos-container {
       display: flex;
       margin-top: 1.5rem;
-      justify-content: center;
+      margin-left: 40px;
     }
     label {
       display: flex;
@@ -114,4 +114,4 @@ export class ToDoList extends LitElement {
     this._listItems = newTodos;
   }
 }
-customElements.define('todo-list', ToDoList);
+customElements.define('lit-todo-list', LitToDoList);
